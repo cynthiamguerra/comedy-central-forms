@@ -71,6 +71,30 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+        table.table-fixed {
+            table-layout: fixed;
+            width: 95%;
+            border-collapse: collapse;
+            border-spacing: 1px;
+        }
+        table.table-fixed, th,td {
+            border: 1px solid black;
+        }
+        table.no-line, table.no-line th, table.no-line td {
+            border: 0 !important;
+        }
+        .left {
+            width: 70%;
+        }
+        .right {
+            width: 35%;
+        }
+        .one {
+            width: 50%;
+        }
+        .two,.three {
+            width: 24%;
+        }
     </style>
 </head>
 <body>
@@ -291,7 +315,7 @@
             <div class="row">
                 <div class="full">
                     <span>
-                        Initial Release <span class="fine-print">(check one, indicate station or network not listed)</span>:
+                        <span class="cell-header">Initial Release</span> <span class="fine-print">(check one, indicate station or network not listed)</span>:
                     </span>
                     <span style="float:right;">
                         Is this a Pilot?
@@ -401,6 +425,112 @@
                 </div>
                 <div class="half line">
                 </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <span class="cell-header">Employee Information</span> <span class="fine-print">(Please print clearly)</span>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table-fixed">
+                    <colgroup>
+                        <col class="left" />
+                        <col class="right" />
+                    </colgroup>
+                    <tr>
+                        <td>
+                            Print Full Name:
+                        </td>
+                        <td>
+                            Dramatic
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="upm"/>
+                            <label for="upm">UPM</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="assistant-director-1"/>
+                            <label for="assistant-director-1">1st Assistant Director</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <table class="table-fixed no-line">
+                    <colgroup>
+                        <col class="one" />
+                        <col class="two" />
+                        <col class="three" />
+                    </colgroup>
+                    <tr>
+                        <th colspan="3" class="cell-header">
+                            Contacts:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Employment Contact (name):
+                            <div class="line" style="width:70%;overflow:hidden;display:inline-block;">
+                            </div>
+                        </td>
+                        <td>
+                            Phone:
+                            <div class="fourth line">
+                            </div>
+                        </td>
+                        <td rowspan="11">
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
