@@ -81,7 +81,7 @@
             border: 1px solid black;
         }
         table.no-line, table.no-line th, table.no-line td {
-            border: 0 !important;
+            border: 0;
         }
         .left {
             width: 70%;
@@ -94,6 +94,12 @@
         }
         .two,.three {
             width: 24%;
+        }
+        .cell-header {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: left;
         }
     </style>
 </head>
@@ -525,7 +531,7 @@
                     <tr>
                         <td>
                             Employment Contact (name):
-                            <div class="line" style="width:70%;overflow:hidden;display:inline-block;">
+                            <div class="line" style="width:50%;overflow:hidden;display:inline-block;">
                             </div>
                         </td>
                         <td>
